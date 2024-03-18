@@ -1,0 +1,31 @@
+<admin-navbar></admin-navbar>
+
+<div class="container p-3 mt-5">
+  <table class="table-dark table-responsive text-light fw-bold">
+    <thead>
+      <tr>
+        <th class="p-3">ID</th>
+        <th class="p-3">Image</th>
+        <th class="p-3">Name</th>
+        <th class="p-3">Role</th>
+        <th class="p-3">Description</th>
+        <th class="p-3" colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="my-3" *ngFor="let chef of chefs">
+        <td class="text-center">{{ chef.id }}</td>
+        <td><img class="mx-2" width="90" src="{{ chef.image }}" alt="" /></td>
+        <td>{{ chef.name }}</td>
+        <td>{{ chef.role }}</td>
+        <td>{{ chef.description }}</td>
+        <td><a routerLink="/admin/chefs/update/{{chef.id}}" class="btn btn-warning">Edit</a></td>
+        <td>
+          <button (click)="delete(chef.id)" class="btn btn-danger mx-3">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

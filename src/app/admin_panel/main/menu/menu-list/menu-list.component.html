@@ -1,0 +1,36 @@
+<admin-navbar></admin-navbar>
+<div class="container mt-5">
+  <table class="table table-responsive" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>IMAGE</th>
+        <th>NAME</th>
+        <th>INGREDIENTS</th>
+        <th>TYPE</th>
+        <th colspan="2">ACTION</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let dish of menu">
+      <tr>
+        <th>{{ dish.id }}</th>
+        <td><img width="90" src="{{ dish.image }}" alt="" /></td>
+        <td>{{ dish.name }}</td>
+        <td>{{ dish.ingredients }}</td>
+        <td>{{ dish.type }}</td>
+        <td>
+          <a
+            routerLink="/admin/menu/update/{{ dish.id }}"
+            class="btn btn-warning"
+            >Edit</a
+          >
+        </td>
+        <td>
+          <button (click)="delete(dish.id)" class="btn btn-danger">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

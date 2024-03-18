@@ -1,0 +1,67 @@
+{
+  "Chefs": [
+    {
+      "role": "Master Chef",
+      "name": "Walter blue",
+      "description": "Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.",
+      "image": "assets/img/chefs/chefs-1.jpg",
+      "id": 1
+    },
+    {
+      "name": "Sarah Jhonson",
+      "role": "Patissier",
+      "image": "assets/img/chefs/chefs-2.jpg",
+      "description": "Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.",
+      "id": 2
+    },
+    {
+      "name": "Joo Anderson",
+      "role": "Cook",
+      "image": "assets/img/chefs/chefs-3.jpg",
+      "description": "Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.",
+      "id": 3
+    }
+  ],
+  "Menu": [
+    {
+      "name": "Eos Luibusdam",
+      "ingredients": "Lorem, deren, trataro, filede, nerada",
+      "image": "assets/img/menu/menu-item-4.png",
+      "price": "12.95",
+      "type": "lunch",
+      "id": 1
+    },
+    {
+      "name": "ملوخيه ",
+      "price": "80",
+      "type": "breakfast",
+      "id": 2,
+      "ingredients": "a lot of thing",
+      "image": "https://sa.shajarat-aldurr.com/wp-content/uploads/2022/05/01_0008_%D8%B7%D8%A7%D8%AC%D9%86-%D9%85%D9%84%D9%88%D8%AE%D9%8A%D8%A9-600x600.png"
+    },
+    {
+      "name": "فراخ مشويه",
+      "ingredients": "طحينه ,سلطه ,بقدونس",
+      "image": "https://th.bing.com/th?id=OIP.cTfRsxooEPlVbHQABqMYFQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "price": "190",
+      "type": "dinner",
+      "id": 3
+    },
+    {
+      "name": "سحلب",
+      "ingredients": "لبن , مكسرات , جوز هند",
+      "image": "https://th.bing.com/th/id/OIP.6TtT30Jnc70__di65E_UNAHaFe?w=262&h=193&c=7&r=0&o=5&cb=10&dpr=1.3&pid=1.7",
+      "price": "25",
+      "type": "starter",
+      "id": 4
+    },
+    {
+      "name": "banana",
+      "ingredients": "bananaMooz",
+      "image": "https://th.bing.com/th?id=OIP.IWUDqJNEkGa_jAbNtzq51wHaHU&w=251&h=248&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "price": "5.85",
+      "type": "breakfast",
+      "id": 5
+    }
+  ]
+}

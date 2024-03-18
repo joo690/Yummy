@@ -1,0 +1,68 @@
+<admin-navbar></admin-navbar>
+<div class="container bg-dark mt-5 p-4">
+  <div class="alert alert-success" *ngIf="message">
+    {{ message }}
+  </div>
+  <form [formGroup]="menu" action="" class="form text-light">
+    <div class="form-group my-4">
+      <label for="name" class="form-label">Name</label>
+      <input
+        formControlName="name"
+        type="text"
+        placeholder="Dish's Name"
+        name="name"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group my-4">
+      <label for="Ingredients" class="form-label">Ingredients</label>
+      <input
+        formControlName="ingredients"
+        type="text"
+        placeholder="Dish's Ingredients"
+        name="Ingredients"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group my-4">
+      <label for="Image" class="form-label">Image</label>
+      <input
+        formControlName="image"
+        type="text"
+        placeholder="Dish's Image URL"
+        name="Image"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group my-4">
+      <label for="price" class="form-label">price</label>
+      <input
+        formControlName="price"
+        type="text"
+        placeholder="Dish's price"
+        name="price"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group my-4">
+      <label for="type" class="form-label">Type</label>
+      <select formControlName="type" name="type" class="form-control" id="">
+        <option value="starter">starter</option>
+        <option value="breakfast">breakfast</option>
+        <option value="lunch">lunch</option>
+        <option value="dinner">dinner</option>
+      </select>
+    </div>
+    <div class="submit-btn" *ngIf="menu?.valid; then valid; else invalid"></div>
+  </form>
+</div>
+<ng-template #valid>
+  <div class="text-center">
+    <button (click)="Add()" class="btn btn-warning rounded">Add Dish</button>
+  </div>
+</ng-template>
+<ng-template #invalid>
+  <div class="text-center">
+    <button class="btn btn-danger rounded" disabled>Fill out all fields</button>
+  </div>
+</ng-template>
